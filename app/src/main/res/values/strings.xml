@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">H&amp;B-Analyzer</string>
+    <string name="label_guess">Guess</string>
+    <string name="label_hits">Hits</string>
+    <string name="label_blows">Blows</string>
+    <string name="button_label_next">NEXT</string>
+    <string name="button_label_reset">RESET</string>
+</resources>

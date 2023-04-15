@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvGuessLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/label_guess"
+        app:layout_constraintStart_toStartOf="@+id/tvGuessValue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGuessValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGuessLabel"
+        tools:text="0 1 2" />
+
+    <TextView
+        android:id="@+id/tvHitsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_hits"
+        app:layout_constraintStart_toStartOf="@+id/etHitsValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvGuessValue" />
+
+    <EditText
+        android:id="@+id/etHitsValue"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvGuessValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvHitsLabel"
+        tools:text="3" />
+
+    <TextView
+        android:id="@+id/tvBlowsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_blows"
+        app:layout_constraintStart_toStartOf="@+id/etBlowsValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvGuessValue" />
+
+    <EditText
+        android:id="@+id/etBlowsValue"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvGuessValue"
+        app:layout_constraintTop_toBottomOf="@+id/tvBlowsLabel"
+        tools:text="3" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/button_label_next"
+        app:layout_constraintEnd_toEndOf="@+id/tvGuessValue"
+        app:layout_constraintStart_toStartOf="@+id/tvGuessValue"
+        app:layout_constraintTop_toBottomOf="@+id/etHitsValue" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="@string/button_label_reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="@+id/btnNext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
